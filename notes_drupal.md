@@ -166,7 +166,7 @@ Deb软件包相关安装与卸载
 
 **********************************
 ###蓝灯项目
-https://github.com/getlantern/lantern
+https://github.com/getlantern/lantern  
 sudo dpkg -i lantern-installer-beta-64-bit.deb
 
 ********************************
@@ -413,7 +413,6 @@ http://www.thinkindrupal.com/
 
 豆瓣阅读： thinkindrupal  https://read.douban.com/reader/ebook/15377941/
 
-采用drush 更新drupal7 核心程序 https://www.drupal.org/node/2550801
 
 *******************************
 《Beginning Drupal 8》  https://github.com/drupalchina/beginningd8cn
