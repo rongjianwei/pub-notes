@@ -15,8 +15,8 @@ https://www.drupal.org/docs/8/api/database-api
 ****************************
 ###ubuntu 14.04下安装 tomcat7
 sudo apt-get update
-sudo apt-get install tomcat7
-安装辅助工具
+sudo apt-get install tomcat7  
+安装辅助工具  
 sudo apt-get install tomcat7-docs tomcat7-examples tomcat7-admin
 
 验证安装成功：在浏览器上输入，服务器网址:8080，可以看到tomcat 的启动网页。
@@ -24,29 +24,27 @@ sudo apt-get install tomcat7-docs tomcat7-examples tomcat7-admin
 Tomcat默认安装目录：/etc/tomcat7，/usr/share/tomcat7，
 
 solr下载地址：
-http://www.apache.org/dyn/closer.cgi/lucene/solr/
-如果已经安装 java8 的版本，下载最新的 solr-6.3.0版本。
+http://www.apache.org/dyn/closer.cgi/lucene/solr/  
+如果已经安装 java8 的版本，下载最新的 solr-6.3.0版本。  
 java7，对应下载 solr-5.5.3 
 
-下载后，保存到 /usr/local/share，然后解压缩. 
+下载后，保存到 /usr/local/share，然后解压缩.  
 测试, 启动solr服务， sudo solr-5.5.3/bin/solr start 
-看到服务 solr 正常运行信息后， 在浏览器里输入，服务器ip:8983/solr, 即可看到 solr 的启动页面了。
+看到服务 solr 正常运行信息后， 在浏览器里输入，服务器ip:8983/solr, 即可看到 solr 的启动页面了。  
 
 安装 solr 服务，运行 solr-5.5.3/bin/install_solr_service.sh , 详细操作，参见该脚本。
 
-
-
-??????????????????????????
+***********************************
 sudo apt-get install solr-common
 
 
-在/etc/tomcat7/Catalina/localhost下面创建一个solr.xml文件，内容如下：
-<?xml version="1.0" encoding="utf-8"?>
-<Context docBase="/usr/share/tomcat7/webapps/solr" debug="0" crossContext="true">
-<Environment name="solr/home" type="java.lang.String" value="/usr/share/tomcat7/webapps/solr" override="true"/>
-</Context>
-
-
+在/etc/tomcat7/Catalina/localhost下面创建一个solr.xml文件，内容如下：  
+    
+    <?xml version="1.0" encoding="utf-8"?>
+    <Context docBase="/usr/share/tomcat7/webapps/solr" debug="0" crossContext="true">
+    <Environment name="solr/home" type="java.lang.String" value="/usr/share/tomcat7/webapps/solr" override="true"/>
+    </Context>
+ 
 sudo service tomcat7 restart
 正常重启之后在/var/lib/tomcat7/webapps目录下会增加一个solr目录
 
@@ -56,25 +54,25 @@ sudo service tomcat7 restart
 
 在/var/lib/tomcat7/webapps/solr下面，创建solr.xml文件，内容如下：
 
-<?xml version="1.0" encoding="UTF-8" ?>
+    <?xml version="1.0" encoding="UTF-8" ?>
+    
+    <!--
+     All (relative) paths are relative to the installation path
+    
+      persistent: Save changes made via the API to this file
+      sharedLib: path to a lib directory that will be shared across all cores
+        -->
+    <solr persistent="false">
 
-<!--
- All (relative) paths are relative to the installation path
-
-  persistent: Save changes made via the API to this file
-  sharedLib: path to a lib directory that will be shared across all cores
--->
-<solr persistent="false">
-
-<!--
-  adminPath: RequestHandler path to manage cores.  
-    If 'null' (or absent), cores will not be manageable via request handler
-  -->
-<cores adminPath="/admin/cores">
-<core name="solr" instanceDir="solr" />
-	<core name="navigation" instanceDir="navigation" />
-</cores>
-</solr>
+    <!--
+      adminPath: RequestHandler path to manage cores.  
+        If 'null' (or absent), cores will not be manageable via request handler
+      -->
+    <cores adminPath="/admin/cores">
+    <core name="solr" instanceDir="solr" />
+    	<core name="navigation" instanceDir="navigation" />
+    </cores>
+    </solr>
 
 重启tomcat7:
 service tomcat7 restart
