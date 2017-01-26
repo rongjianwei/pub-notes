@@ -109,25 +109,31 @@ install 运行成功后，转到2)-4)执行相应的步骤。
 
 1)把在 Github 上的 Drush 克隆一份到本地的 /usr/local/src/drush 这个目录的下面。然后进入到这个目录：
 drush 8.x 兼容 d6, d7, d8
-sudo git clone -b 8.x https://github.com/drush-ops/drush.git /usr/local/src/drush
-sudo cd /usr/local/src/drush
+
+    sudo git clone -b 8.x https://github.com/drush-ops/drush.git /usr/local/src/drush
+    sudo cd /usr/local/src/drush
 
 2)执行 composer install 去安装 Drush 所依赖的东西，可能会提示输入你在 github 上的用户名与密码：
-sudo composer install
+
+    sudo composer install
 
 成功以后，在环境变量的目录下面创建一个 drush 的快捷方式，可以使用 ln -s  去做这件事，像这样：
-sudo ln -s /usr/local/src/drush/drush /usr/bin/drush
+
+    sudo ln -s /usr/local/src/drush/drush /usr/bin/drush
 
 现在你应该可以在系统的任何地方使用 drush 命令了：
-drush help
-drush --version
+    
+    drush help
+    drush --version
 
 3)Run composer update
-sudo cd /usr/local/src/drush
-sudo composer update
+
+    sudo cd /usr/local/src/drush
+    sudo composer update
 
 4)卸载drush Uninstall with : 
-composer global remove drush/drush
+
+    composer global remove drush/drush
 
 
 ****************************
@@ -204,9 +210,9 @@ https://www.drupal.org/node/1866108
 *************************
 ###准备 docbook 环境
 
-    $sudo apt-get install xsltproc
-    $sudo apt-get install docbook-xsl
-    $sudo apt-get install docbook-defguide
+    sudo apt-get install xsltproc
+    sudo apt-get install docbook-xsl
+    sudo apt-get install docbook-defguide
 
 最后这个就是那本大名鼎鼎的Docbook:The Definitive Guide，装完之后就可以直接在本机浏览器输入http://localhost/doc/docbook-defguide/html/docbook.html来阅读此书了，我们和谐社会不是不能访问docbook.org吗，装完这个就可以本机阅读了，当然，你得装了apache。
 
@@ -375,7 +381,6 @@ find /etc -name “*” | xargs grep “hello abcserver”
 
 A beginner's Guide to Drush
 drush 安装；sudo apt-get install drush
-
 
 Think in Drupal
 
