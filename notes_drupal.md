@@ -1,4 +1,12 @@
 #notes of drupal
+##在ubuntu 16.04系统上，安装drupal8
+###运行环境的准备
+lamp
+monogoDB
+composer
+drush
+
+
 
 ****************************
 ###d8 database api
@@ -23,18 +31,7 @@ sudo apt-get install tomcat7-docs tomcat7-examples tomcat7-admin
 
 Tomcat默认安装目录：/etc/tomcat7，/usr/share/tomcat7，
 
-solr下载地址：
-http://www.apache.org/dyn/closer.cgi/lucene/solr/  
-如果已经安装 java8 的版本，下载最新的 solr-6.3.0版本。  
-java7，对应下载 solr-5.5.3 
-
-下载后，保存到 /usr/local/share，然后解压缩.  
-测试, 启动solr服务， sudo solr-5.5.3/bin/solr start 
-看到服务 solr 正常运行信息后， 在浏览器里输入，服务器ip:8983/solr, 即可看到 solr 的启动页面了。  
-
-安装 solr 服务，运行 solr-5.5.3/bin/install_solr_service.sh , 详细操作，参见该脚本。
-
-***********************************
+********************************
 sudo apt-get install solr-common
 
 
@@ -77,11 +74,22 @@ sudo service tomcat7 restart
 重启tomcat7:
 service tomcat7 restart
 
+*******************************
+###安装solr，solr下载地址：
+http://www.apache.org/dyn/closer.cgi/lucene/solr/  
+如果已经安装 java8 的版本，下载最新的 solr-6.3.0版本。  
+java7，对应下载 solr-5.5.3 
+
+下载后，保存到 /usr/local/share，然后解压缩.  
+测试, 启动solr服务， sudo solr-5.5.3/bin/solr start 
+看到服务 solr 正常运行信息后， 在浏览器里输入，服务器ip:8983/solr, 即可看到 solr 的启动页面了。  
+
+安装 solr 服务，运行 solr-5.5.3/bin/install_solr_service.sh , 详细操作，参见该脚本。
 
 ****************************
 ###在ubuntu 16.04下安装 composer
 
-[composer 中文网 ](http://www.phpcomposer.com/) (有关国内的镜像)
+[composer 中文网 ](http://www.phpcomposer.com/) (有关国内的镜像，大大提高update的速度)
 
 1)下载
 从网站 https://getcomposer.org/download/ ,下载 composer.phar 文件，然后复制到：
@@ -105,7 +113,12 @@ sudo php install
 install 运行成功后，转到2)-4)执行相应的步骤。
 
 **********************************
-通过 composer 安装 drush (github 源代码)
+###通过 composer 安装 drush
+
+
+
+**********************************
+###通过 composer 安装 drush (github 源代码)
 
 1)把在 Github 上的 Drush 克隆一份到本地的 /usr/local/src/drush 这个目录的下面。然后进入到这个目录：
 drush 8.x 兼容 d6, d7, d8
@@ -143,42 +156,21 @@ https://www.drupal.org/node/2550801
 ****************************
 ###ubuntu软件安装(pkg安装)
  
-    apt-get install softname1 softname2 softname3……
-卸载软件
- 
-    apt-get remove softname1 softname2 softname3……
-卸载并清除配置
- 
-    apt-get remove --purge softname1
-更新软件信息数据库
- 
-    apt-get update
-进行系统升级
- 
-    apt-get upgrade
-搜索软件包
- 
-    apt-cache search softname1 softname2 softname3……
+    apt-get install softname1 softname2 softname3……  #pkg安装
+    apt-get remove softname1 softname2 softname3……  #卸载软件
+    apt-get remove --purge softname1  #卸载并清除配置
+    apt-get update #更新软件信息数据库
+    apt-get upgrade  #进行系统升级
+    apt-cache search softname1 softname2 softname3……  #搜索软件包
 
 Deb软件包相关安装与卸载
-安装deb软件包
  
-    dpkg -i xxx.deb
-删除软件包
-  
-    dpkg -r xxx.deb
-连同配置文件一起删除
- 
-    dpkg -r --purge xxx.deb
-查看软件包信息
- 
-    dpkg -info xxx.deb
-查看文件拷贝详情
- 
-    dpkg -L xxx.deb
-查看系统中已安装软件包信息
- 
-    dpkg -l
+    dpkg -i xxx.deb  #安装deb软件包
+    dpkg -r xxx.deb #删除软件包
+    dpkg -r --purge xxx.deb #连同配置文件一起删除
+    dpkg -info xxx.deb #查看软件包信息
+    dpkg -L xxx.deb  #查看文件拷贝详情
+    dpkg -l  #查看系统中已安装软件包信息
 
 **********************************
 ###蓝灯项目
@@ -218,37 +210,20 @@ https://www.drupal.org/node/1866108
 
 *************************
 ###ubuntu中的压缩与解压缩
-解压缩 tar 命令
 
-    sudo tar xzvf drush-8.x-6.0-rc4.tar.gz
-压缩 tar 命令
-
-    sudo tar zcvf 文件名.tar.gz 目标名
+    sudo tar xzvf drush-8.x-6.0-rc4.tar.gz  #解压缩 tar 命令
+    sudo tar zcvf 文件名.tar.gz 目标名  #压缩 tar 命令
 
 unzip解压缩应用实例
 
-  1、把文件解压到当前目录下
-    unzip test.zip
-
-  2、如果要把文件解压到指定的目录下，需要用到-d参数。
-    unzip -d /temp test.zip
-
-  3、解压的时候，有时候不想覆盖已经存在的文件，那么可以加上-n参数
-    unzip -n test.zip
+    unzip test.zip  #1、把文件解压到当前目录下
+    unzip -d /temp test.zip  #2、如果要把文件解压到指定的目录下，需要用到-d参数。
+    unzip -n test.zip  #3、解压的时候，有时候不想覆盖已经存在的文件，那么可以加上-n参数
     unzip -n -d /temp test.zip
-
-  4、只看一下zip压缩包中包含哪些文件，不进行解压缩
-    unzip -l test.zip
-
-  5、查看显示的文件列表还包含压缩比率
-    unzip -v test.zip
-
-  6、检查zip文件是否损坏
-    unzip -t test.zip
-
-  7、将压缩文件test.zip在指定目录tmp下解压缩，如果已有相同的文件存在，要求unzip命令覆盖原先的文件
-    unzip -o test.zip -d /tmp/
-
+    unzip -l test.zip  #4、只看一下zip压缩包中包含哪些文件，不进行解压缩
+    unzip -v test.zip  #5、查看显示的文件列表还包含压缩比率
+    unzip -t test.zip  #6、检查zip文件是否损坏
+    unzip -o test.zip -d /tmp/  #7、将压缩文件test.zip在指定目录tmp下解压缩，如果已有相同的文件存在，要求unzip命令覆盖原先的文件
 
 **************************
 ###drush 开发网站
