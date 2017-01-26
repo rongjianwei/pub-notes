@@ -5,6 +5,14 @@ lamp
 monogoDB  
 https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/  
 [Ubuntu16.04使用阿里云镜像安装Mongodb]( http://www.linuxdiyf.com/linux/26151.html )  
+    sudo apt-get install php-mongodb
+http://drupalchina.cn/content/shi-yong-mongodb-jia-su-drupal7-field-cun-chu  
+www.wiredcraft.com
+我是
+JackeyChan
+Email: a397420507@gmail.com
+qq: 397420507
+
 composer  
 drush  
 
