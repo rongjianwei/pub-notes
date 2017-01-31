@@ -16,7 +16,12 @@ qq: 397420507
 composer  
 drush  
 
-
+****************************
+###JavaScript
+JavaScript 参考文档  ( https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference )  
+https://www.javascript.com/   
+http://www.itxueyuan.org/  
+http://www.w3school.com.cn/js/index.asp  
 
 ****************************
 ###d8 database api
