@@ -163,7 +163,7 @@ drush 8.x 兼容 d6, d7, d8
 
     composer global remove drush/drush
 
-
+##drupal与ubuntu系统的维护及相关命令
 ****************************
 ###采用drush 更新drupal7 核心程序
 https://www.drupal.org/node/2550801
@@ -188,12 +188,6 @@ Deb软件包相关安装与卸载
     dpkg -l  #查看系统中已安装软件包信息
 
 **********************************
-###蓝灯项目
-https://github.com/getlantern/lantern  
-    
-	sudo dpkg -i lantern-installer-beta-64-bit.deb
-
-********************************
 ###Drupal 7 - All About Rules
 https://www.drupal.org/node/1866108
 
@@ -203,6 +197,19 @@ https://www.drupal.org/node/1866108
 网站的地址是：http://demo.com，要在网站关闭后进行用户登录，则在地址栏上输入：http://demo.com/user/login 或者 http://demo.com/?q=user 即可
 
 *************************
+
+##参考网址与线索
+*************************
+###国外那些优秀的 Drupal 教程博客  
+http://drupalct.org/drupal/drupal-tutorial-blogs-you-should-know.html
+
+*************************
+###蓝灯项目
+https://github.com/getlantern/lantern  
+    
+	sudo dpkg -i lantern-installer-beta-64-bit.deb
+
+********************************
 ###腾讯云工程师 :
 2016-11-24 18:20:11
 
