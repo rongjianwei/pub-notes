@@ -206,6 +206,7 @@ http://drupalct.org/drupal/drupal-tutorial-blogs-you-should-know.html
 *************************
 ###drupal 8 入门  
 http://blog.csdn.net/u011474028/article/details/52514472
+symfony中文  http://symfony.cn/docs/
 
 ************************
 ###蓝灯项目
