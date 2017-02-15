@@ -200,6 +200,9 @@ https://www.drupal.org/node/1866108
 
 ##参考网址与线索
 *************************
+亚艾元 http://www.yaiyuan.com/  
+
+*************************
 ###国外那些优秀的 Drupal 教程博客  
 http://drupalct.org/drupal/drupal-tutorial-blogs-you-should-know.html
 
