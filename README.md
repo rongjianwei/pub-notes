@@ -1,6 +1,8 @@
 # pub-notes
 共享的技术笔记
 ##目录
+[drupal笔记]( ./notes_drupal.md "drupal学习笔记" )  
+[ubuntu 常用命令]( ./cmds_ubuntu.md "ubuntu 常用命令" )
 
 
 ##参考链接
