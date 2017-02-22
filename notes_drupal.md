@@ -169,25 +169,6 @@ drush 8.x 兼容 d6, d7, d8
 https://www.drupal.org/node/2550801
 
 ****************************
-###ubuntu软件安装(pkg安装)
- 
-    apt-get install softname1 softname2 softname3……  #pkg安装
-    apt-get remove softname1 softname2 softname3……  #卸载软件
-    apt-get remove --purge softname1  #卸载并清除配置
-    apt-get update #更新软件信息数据库
-    apt-get upgrade  #进行系统升级
-    apt-cache search softname1 softname2 softname3……  #搜索软件包
-
-Deb软件包相关安装与卸载
- 
-    dpkg -i xxx.deb  #安装deb软件包
-    dpkg -r xxx.deb #删除软件包
-    dpkg -r --purge xxx.deb #连同配置文件一起删除
-    dpkg -info xxx.deb #查看软件包信息
-    dpkg -L xxx.deb  #查看文件拷贝详情
-    dpkg -l  #查看系统中已安装软件包信息
-
-**********************************
 ###Drupal 7 - All About Rules
 https://www.drupal.org/node/1866108
 
@@ -239,22 +220,6 @@ https://github.com/getlantern/lantern
 
 最后这个就是那本大名鼎鼎的Docbook:The Definitive Guide，装完之后就可以直接在本机浏览器输入http://localhost/doc/docbook-defguide/html/docbook.html来阅读此书了，我们和谐社会不是不能访问docbook.org吗，装完这个就可以本机阅读了，当然，你得装了apache。
 
-*************************
-###ubuntu中的压缩与解压缩
-
-    sudo tar xzvf drush-8.x-6.0-rc4.tar.gz  #解压缩 tar 命令
-    sudo tar zcvf 文件名.tar.gz 目标名  #压缩 tar 命令
-
-unzip解压缩应用实例
-
-    unzip test.zip  #1、把文件解压到当前目录下
-    unzip -d /temp test.zip  #2、如果要把文件解压到指定的目录下，需要用到-d参数。
-    unzip -n test.zip  #3、解压的时候，有时候不想覆盖已经存在的文件，那么可以加上-n参数
-    unzip -n -d /temp test.zip
-    unzip -l test.zip  #4、只看一下zip压缩包中包含哪些文件，不进行解压缩
-    unzip -v test.zip  #5、查看显示的文件列表还包含压缩比率
-    unzip -t test.zip  #6、检查zip文件是否损坏
-    unzip -o test.zip -d /tmp/  #7、将压缩文件test.zip在指定目录tmp下解压缩，如果已有相同的文件存在，要求unzip命令覆盖原先的文件
 
 **************************
 ###drush 开发网站
@@ -308,6 +273,12 @@ https://launchpad.net/~ondrej/+archive/ubuntu/php
 Verify your PHP's version  
 
     sudo php -v
+
+安装 xdebug 调试
+    sudo apt-get install php7.0-xdebug
+
+drupal调试  
+https://martsie.github.io/2014/04/02/drupal-xdebug-debugging/
 
 **********************************
 ###修改 vim 的默认配色(来自百度经验)
