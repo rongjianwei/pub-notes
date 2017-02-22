@@ -184,6 +184,10 @@ https://www.drupal.org/node/1866108
 亚艾元 http://www.yaiyuan.com/  
 
 *************************
+###drupal8怎么使用外部数据库的数据  
+https://zhidao.baidu.com/question/2271246971677217428.html
+
+*************************
 ###国外那些优秀的 Drupal 教程博客  
 http://drupalct.org/drupal/drupal-tutorial-blogs-you-should-know.html
 
