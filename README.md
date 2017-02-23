@@ -6,6 +6,12 @@
 
 
 ##网络技术相关的参考链接
+###Atom
+https://atom-china.org/  
+https://cnpmjs.org/mirrors/atom/  
+https://atom.io/  
+
+
 ###Markdown
 [Markdown语法说明（简体中文)]( http://www.appinn.com/markdown/ "Markdown" )  
 This is [an example]( http://example.com/ "Title") inline link.  
