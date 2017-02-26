@@ -1,8 +1,9 @@
 # pub-notes
 共享的技术笔记
 ##目录
-[drupal笔记]( ./notes_drupal.md "drupal学习笔记" )  
-[ubuntu 常用命令]( ./cmds_ubuntu.md "ubuntu 常用命令" )
+[drupal笔记]( ./notes_drupal.md "drupal学习笔记" )    
+[ubuntu 常用命令]( ./cmds_ubuntu.md "ubuntu 常用命令" )  
+[Angular2笔记]( ./notes_Angular2.md "Angular2学习笔记" )  
 
 
 ##网络技术相关的参考链接
