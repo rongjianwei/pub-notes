@@ -51,12 +51,12 @@ sudo apt-get install solr-common
 
 
 在/etc/tomcat7/Catalina/localhost下面创建一个solr.xml文件，内容如下：  
-    
+
     <?xml version="1.0" encoding="utf-8"?>
     <Context docBase="/usr/share/tomcat7/webapps/solr" debug="0" crossContext="true">
     <Environment name="solr/home" type="java.lang.String" value="/usr/share/tomcat7/webapps/solr" override="true"/>
     </Context>
- 
+
 sudo service tomcat7 restart
 正常重启之后在/var/lib/tomcat7/webapps目录下会增加一个solr目录
 
@@ -67,10 +67,10 @@ sudo service tomcat7 restart
 在/var/lib/tomcat7/webapps/solr下面，创建solr.xml文件，内容如下：
 
     <?xml version="1.0" encoding="UTF-8" ?>
-    
+
     <!--
      All (relative) paths are relative to the installation path
-    
+
       persistent: Save changes made via the API to this file
       sharedLib: path to a lib directory that will be shared across all cores
         -->
@@ -93,10 +93,10 @@ service tomcat7 restart
 ###安装solr，solr下载地址：
 http://www.apache.org/dyn/closer.cgi/lucene/solr/  
 如果已经安装 java8 的版本，下载最新的 solr-6.3.0版本。  
-java7，对应下载 solr-5.5.3 
+java7，对应下载 solr-5.5.3
 
 下载后，保存到 /usr/local/share，然后解压缩.  
-测试, 启动solr服务， sudo solr-5.5.3/bin/solr start 
+测试, 启动solr服务， sudo solr-5.5.3/bin/solr start
 看到服务 solr 正常运行信息后， 在浏览器里输入，服务器ip:8983/solr, 即可看到 solr 的启动页面了。  
 
 安装 solr 服务，运行 solr-5.5.3/bin/install_solr_service.sh , 详细操作，参见该脚本。
@@ -109,9 +109,9 @@ java7，对应下载 solr-5.5.3
 1)下载
 从网站 https://getcomposer.org/download/ ,下载 composer.phar 文件，然后复制到：
 /usr/local/share/composer 目录
-还有一种下载方法(可能无法突破墙)： curl -sS https://getcomposer.org/installer | php 
+还有一种下载方法(可能无法突破墙)： curl -sS https://getcomposer.org/installer | php
 
-2) 安装 
+2) 安装
 php composer.phar --version
 composer程序启动后，会显示版本号。
 
@@ -124,7 +124,7 @@ composer -version
 如果成功的话，会出现一个华丽的图标：composer 等等。
 
 *5)还有种方法，执行安装composer的php脚本：
-sudo php install 
+sudo php install
 install 运行成功后，转到2)-4)执行相应的步骤。
 
 **********************************
@@ -150,7 +150,7 @@ drush 8.x 兼容 d6, d7, d8
     sudo ln -s /usr/local/src/drush/drush /usr/bin/drush
 
 现在你应该可以在系统的任何地方使用 drush 命令了：
-    
+
     drush help
     drush --version
 
@@ -159,7 +159,7 @@ drush 8.x 兼容 d6, d7, d8
     sudo cd /usr/local/src/drush
     sudo composer update
 
-4)卸载drush Uninstall with : 
+4)卸载drush Uninstall with :
 
     composer global remove drush/drush
 
@@ -197,32 +197,9 @@ http://blog.csdn.net/u011474028/article/details/52514472
 symfony中文  http://symfony.cn/docs/  
 symfony官网 http://symfony.com/
 
-************************
-###蓝灯项目
-https://github.com/getlantern/lantern  
-    
-	sudo dpkg -i lantern-installer-beta-64-bit.deb
-
-********************************
-###腾讯云工程师 :
-2016-11-24 18:20:11
-
-您好，关于微信开放/公众平台的业务合作，您可以发送邮件到 weixin-open@qq.com 进行商谈，感谢您的支持！ 
- 或者请咨询这里的微信在线客服 http://kf.qq.com/other/for_your_service.shtml
-您也可以到http://weixin.qq.com/-- 联系我们，里面有一些联系方式，您参考一下。
-
-*************************
-###http://edu.51cto.com/  51cto学院
-
-
-*************************
-###准备 docbook 环境
-
-    sudo apt-get install xsltproc
-    sudo apt-get install docbook-xsl
-    sudo apt-get install docbook-defguide
-
-最后这个就是那本大名鼎鼎的Docbook:The Definitive Guide，装完之后就可以直接在本机浏览器输入http://localhost/doc/docbook-defguide/html/docbook.html来阅读此书了，我们和谐社会不是不能访问docbook.org吗，装完这个就可以本机阅读了，当然，你得装了apache。
+*****************
+###d8 建立客户模块
+[https://www.drupal.org/docs/8/creating-custom-modules]( https://www.drupal.org/docs/8/creating-custom-modules )
 
 
 **************************
@@ -242,7 +219,7 @@ ubuntu apt安装中是 /etc/apache2/apache2.conf
 1.将所有的AllowOverride None修改为AllowOverride All，一共有三处。
 
 2.开启模块LoadModule rewrite_module modules/mod_rewrite.so，将#去掉即可。
-ubuntu 中用命令 
+ubuntu 中用命令
 
     sudo  a2enmod 开启 rewriter 模块。
 
@@ -266,9 +243,9 @@ https://launchpad.net/~ondrej/+archive/ubuntu/php
     sudo LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php
     sudo apt update
 
-    sudo apt-get install php5.6 php5.6-mysql php5.6-dom php5.6-gd php5.6-mbstring 
-    sudo apt-get install php7.0 php7.0-mysql php7.0-dom php7.0-gd php7.0-mbstring 
- 
+    sudo apt-get install php5.6 php5.6-mysql php5.6-dom php5.6-gd php5.6-mbstring
+    sudo apt-get install php7.0 php7.0-mysql php7.0-dom php7.0-gd php7.0-mbstring
+
     sudo a2dismod php7.0
     sudo a2dismod php5.6
     sudo service apache2 restart
