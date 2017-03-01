@@ -68,8 +68,11 @@ https://github.com/getlantern/lantern
 您也可以到http://weixin.qq.com/-- 联系我们，里面有一些联系方式，您参考一下。
 
 *************************
-###http://edu.51cto.com/  51cto学院
+###51cto学院
+[http://edu.51cto.com/](http://edu.51cto.com/)  
 
+###豆瓣读书  
+[https://book.douban.com/](https://book.douban.com/)
 
 *****************************************************************
 
