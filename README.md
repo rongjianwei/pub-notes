@@ -12,6 +12,8 @@ https://atom-china.org/
 https://cnpmjs.org/mirrors/atom/  
 https://atom.io/  
 
+###PHP7教程
+[http://www.yiibai.com/php7/]( http://www.yiibai.com/php7/ )
 
 ###Markdown
 [Markdown语法说明（简体中文)]( http://www.appinn.com/markdown/ "Markdown" )  
