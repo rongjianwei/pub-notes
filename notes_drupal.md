@@ -163,7 +163,7 @@ drush 8.x 兼容 d6, d7, d8
 
     composer global remove drush/drush
 
-##drupal与ubuntu系统的维护及相关命令
+
 ****************************
 ###采用drush 更新drupal7 核心程序
 https://www.drupal.org/node/2550801
@@ -182,6 +182,10 @@ https://www.drupal.org/node/1866108
 ##参考网址与线索
 *************************
 亚艾元 http://www.yaiyuan.com/  
+
+***************************
+###云客drupal8源码分析之数据库系统及其使用  
+http://blog.csdn.net/u011474028/article/details/52958786
 
 *************************
 ###drupal8怎么使用外部数据库的数据  
