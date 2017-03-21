@@ -1,4 +1,24 @@
-#notes of drupal
+ #notes of drupal
+##drupal使用函数
+###drupal抓取外部网络图像
+    function get_external_image($url) {
+    $external_image = file_get_contents($url);
+    $parsed_url = parse_url($url);
+    $name_dest = rand(1000,9999)."_". basename($parsed_url["path"]);
+    var_dump($name_dest );
+    $file = file_save_data($external_image, 'public://'.$name_dest , FILE_EXISTS_REPLACE);
+    if (is_object($file) && file_exists($file->uri)) {
+        $file->status = 1;
+        $file = file_save($file);
+        drupal_write_record('file_usage', $file);
+        return (array) $file;
+    }
+    return null;
+    }
+    //get_external_image("http://www.drupalla.com/logo.gif");
+
+    get_external_image("http://hs-album.oss.aliyuncs.com/static/99/18/ae/image/20161027/20161027215442_10268.jpg");
+
 ##在ubuntu 16.04系统上，安装drupal8
 ###运行环境的准备
 lamp  
@@ -300,9 +320,10 @@ vim的颜色主题文件放在Vim运行目录下的color目录下，所以我们
     sudo apt-get install mysql-workbench  
 
 *****************************************
-###Ubuntu下安装使用Xfce4 桌面环境  
+###Ubuntu下安装使用Xfce4 桌面环境
 
     sudo apt-get install xubuntu-desktop  
+    sudo apt install wicd #无线网卡管理
 
 ******************************************************
 ###vi编辑器中的整行（多行）复制与粘贴就非常必要了。

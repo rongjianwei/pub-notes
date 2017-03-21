@@ -73,7 +73,7 @@ onvif/RTSP协议  [https://www.onvif.org/](https://www.onvif.org/ "onvif 官网"
 
 ************************
 ###蓝灯项目
-https://github.com/getlantern/lantern  
+[https://github.com/getlantern/lantern ]( https://github.com/getlantern/lantern "蓝灯项目") 
 
 	sudo dpkg -i lantern-installer-beta-64-bit.deb
 
