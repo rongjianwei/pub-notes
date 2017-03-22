@@ -1,6 +1,7 @@
 #notes of drupal  
 ##drupal使用函数  
 ###drupal抓取外部网络图像  
+    
     function get_external_image($url) {
     $external_image = file_get_contents($url);
     $parsed_url = parse_url($url);
@@ -15,6 +16,7 @@
     }
     return null;
     }
+    
     get_external_image("http://hs-album.oss.aliyuncs.com/static/99/18/ae/image/20161027/20161027205558_38107.jpg");
 
     get_external_image("http://hs-album.oss.aliyuncs.com/static/99/18/ae/image/20161027/20161027205923_25011.jpg");
@@ -38,7 +40,6 @@
     get_external_image("");
 
  
-
 ##在ubuntu 16.04系统上，安装drupal8
 ###运行环境的准备
 lamp  
