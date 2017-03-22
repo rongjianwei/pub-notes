@@ -110,11 +110,11 @@ vim的颜色主题文件放在Vim运行目录下的color目录下，所以我们
     ln -s 源文件 目标文件
 
 **********************************
-### 安装 lamp 服务器组  
-
+### 安装 lamp 服务器组, openssh 服务器  
     sudo apt-get install lamp-server^  
-安装 mysql workbench  
+	sudo apt install openssh-server
 
+安装 mysql workbench  
     sudo apt-get install mysql-workbench  
 
 *****************************************

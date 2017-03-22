@@ -15,9 +15,29 @@
     }
     return null;
     }
-    //get_external_image("http://www.drupalla.com/logo.gif");
+    get_external_image("http://hs-album.oss.aliyuncs.com/static/99/18/ae/image/20161027/20161027205558_38107.jpg");
 
-    get_external_image("http://hs-album.oss.aliyuncs.com/static/99/18/ae/image/20161027/20161027215442_10268.jpg");
+    get_external_image("http://hs-album.oss.aliyuncs.com/static/99/18/ae/image/20161027/20161027205923_25011.jpg");
+
+    get_external_image("http://hs-album.oss.aliyuncs.com/static/99/18/ae/image/20161027/20161027210056_75054.jpg");
+
+    get_external_image("http://hs-album.oss.aliyuncs.com/static/99/18/ae/image/20161027/20161027210238_47369.jpg");
+
+    get_external_image("http://hs-album.oss.aliyuncs.com/static/99/18/ae/image/20161027/20161027210517_58958.jpg");
+
+    get_external_image("http://hs-album.oss.aliyuncs.com/static/99/18/ae/image/20161027/20161027113827_81711.png");
+
+    get_external_image("");
+
+    get_external_image("");
+
+    get_external_image("");
+
+    get_external_image("");
+
+    get_external_image("");
+
+ 
 
 ##在ubuntu 16.04系统上，安装drupal8
 ###运行环境的准备
@@ -147,6 +167,10 @@ composer -version
 sudo php install
 install 运行成功后，转到2)-4)执行相应的步骤。
 
+*6)还有种方法
+	sudo apt install composer
+	sudo composer config -g repo.packagist composer https://packagist.phpcomposer.com #国内镜像
+
 **********************************
 ###通过 composer 安装 drush
 
@@ -159,11 +183,12 @@ install 运行成功后，转到2)-4)执行相应的步骤。
 drush 8.x 兼容 d6, d7, d8
 
     sudo git clone -b 8.x https://github.com/drush-ops/drush.git /usr/local/src/drush
-    sudo cd /usr/local/src/drush
+    cd /usr/local/src/drush
 
 2)执行 composer install 去安装 Drush 所依赖的东西，可能会提示输入你在 github 上的用户名与密码：
-
-    sudo composer install
+	
+	sudo composer update
+	sudo composer install
 
 成功以后，在环境变量的目录下面创建一个 drush 的快捷方式，可以使用 ln -s  去做这件事，像这样：
 
