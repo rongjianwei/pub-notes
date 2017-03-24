@@ -1,4 +1,4 @@
-#commands of ubuntu
+ #commands of ubuntu
 
 ##ubuntu 命令：
 ****************************
@@ -110,6 +110,10 @@ vim的颜色主题文件放在Vim运行目录下的color目录下，所以我们
     ln -s 源文件 目标文件
 
 **********************************
+### 更新 apt 资源包，然后安装软件包  
+    sudo apt update
+    sudo apt upgrade
+
 ### 安装 lamp 服务器组, openssh 服务器  
     sudo apt-get install lamp-server^  
 	sudo apt install openssh-server

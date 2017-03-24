@@ -170,12 +170,14 @@ install 运行成功后，转到2)-4)执行相应的步骤。
 
 *6)还有种方法
 	sudo apt install composer
+    composer --version #测试安装是否成功
 	sudo composer config -g repo.packagist composer https://packagist.phpcomposer.com #国内镜像
 
 **********************************
 ###通过 composer 安装 drush
-
-
+    composer global require drush/drush #master 版本 8.x
+    sudo ln -s /home/rjw/.composer/vendor/drush/drush/drush  /usr/bin/drush
+    composer remove drush/drush  
 
 **********************************
 ###通过 composer 安装 drush (github 源代码)
