@@ -1,8 +1,8 @@
- #commands of ubuntu
+# commands of ubuntu
 
-##ubuntu 命令：
+## ubuntu 命令：
 ****************************
-###ubuntu 下添加/删除启动服务
+### ubuntu 下添加/删除启动服务  
 1.添加一个服务：
     $sudo update-rc.d ServiceName default  
 2.删除一个服务：
@@ -12,7 +12,7 @@
 然而，在启动或改变运行级别时，是在/etc/rcX.d中来搜索脚本。其中X是运行级别的number。
 
 
-###ubuntu软件安装(pkg安装)
+### ubuntu软件安装(pkg安装)
  
     apt-get install softname1 softname2 softname3……  #pkg安装
     apt-get remove softname1 softname2 softname3……  #卸载软件
@@ -31,7 +31,7 @@ Deb软件包相关安装与卸载
     dpkg -l  #查看系统中已安装软件包信息
 
 **********************************
-###查看磁盘空间
+### 查看磁盘空间
     
 Df命令是linux系统以磁盘分区为单位查看文件系统，可以加上参数查看磁盘剩余空间信息，命令格式：  
 
@@ -47,7 +47,7 @@ Df命令是linux系统以磁盘分区为单位查看文件系统，可以加上�
     du --help
 
 *************************
-###准备 docbook 环境
+### 准备 docbook 环境
 
     sudo apt-get install xsltproc
     sudo apt-get install docbook-xsl
@@ -56,7 +56,7 @@ Df命令是linux系统以磁盘分区为单位查看文件系统，可以加上�
 最后这个就是那本大名鼎鼎的Docbook:The Definitive Guide，装完之后就可以直接在本机浏览器输入http://localhost/doc/docbook-defguide/html/docbook.html来阅读此书了，我们和谐社会不是不能访问docbook.org吗，装完这个就可以本机阅读了，当然，你得装了apache。
 
 *************************
-###ubuntu中的压缩与解压缩
+### ubuntu中的压缩与解压缩
 
     sudo tar xzvf drush-8.x-6.0-rc4.tar.gz  #解压缩 tar 命令
     sudo tar zcvf 文件名.tar.gz 目标名  #压缩 tar 命令
@@ -73,7 +73,7 @@ unzip解压缩应用实例
     unzip -o test.zip -d /tmp/  #7、将压缩文件test.zip在指定目录tmp下解压缩，如果已有相同的文件存在，要求unzip命令覆盖原先的文件
 
 **********************************
-###修改apache/conf/httpd.conf文件：
+### 修改apache/conf/httpd.conf文件：
 ubuntu apt安装中是 /etc/apache2/apache2.conf
 
 1.将所有的AllowOverride None修改为AllowOverride All，一共有三处。
@@ -84,7 +84,7 @@ ubuntu 中用命令
     sudo  a2enmod 开启 rewriter 模块。
 
 **********************************
-###修改 vim 的默认配色(来自百度经验)
+### 修改 vim 的默认配色(来自百度经验)
 
 查看Vim实例中当前的颜色主题  
 打开一个Vim窗口，输入命令:color或:colorscheme后回车查看当前的颜色主题。  
@@ -106,7 +106,7 @@ vim的颜色主题文件放在Vim运行目录下的color目录下，所以我们
 修改vim配置文件，更改默认颜色主题  
 打开/etc/vim/vimrc文件，在其中加入一行"colorscheme elflord (颜色主题名字)"，之后保存更改即可。  
 **********************************
-###ln软连接
+### ln软连接
     ln -s 源文件 目标文件
 
 **********************************
@@ -122,12 +122,16 @@ vim的颜色主题文件放在Vim运行目录下的color目录下，所以我们
     sudo apt-get install mysql-workbench  
 
 *****************************************
-###Ubuntu下安装使用Xfce4 桌面环境  
+### Ubuntu下安装使用Xfce4 桌面环境  
 
     sudo apt-get install xubuntu-desktop  
 
 ******************************************************
-###vi编辑器中的整行（多行）复制与粘贴就非常必要了。
+### Ubuntu 16.04下安装64位谷歌Chrome浏览器
+[http://www.linuxidc.com/Linux/2016-05/131096.htm]( http://www.linuxidc.com/Linux/2016-05/131096.htm ) 
+
+*****************************************************
+### vi编辑器中的整行（多行）复制与粘贴就非常必要了。  
 1、复制  
   1）单行复制  
   在命令模式下，将光标移动到将要复制的行处，按“yy”进行复制；
@@ -157,7 +161,7 @@ vi复制多行文本的方法
    要删除多行的话，可以用 ：5, 9 de  
 
 ********************************************************
-###在某个路径下查找所有包含“hello abcserver”字符串的文件。
+### 在某个路径下查找所有包含“hello abcserver”字符串的文件。
 
 find /etc -name “*” | xargs grep “hello abcserver”
 
