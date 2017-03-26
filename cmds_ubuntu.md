@@ -128,6 +128,13 @@ vim的颜色主题文件放在Vim运行目录下的color目录下，所以我们
 
 ******************************************************
 ### Ubuntu 16.04下安装64位谷歌Chrome浏览器
+
+    sudo wget http://www.linuxidc.com/files/repo/google-chrome.list -P /etc/apt/sources.list.d/
+    wget -q -O - https://dl.google.com/linux/linux_signing_key.pub  | sudo apt-key add -
+    sudo apt-get update
+    sudo apt-get install google-chrome-stable
+    /usr/bin/google-chrome-stable
+    
 [http://www.linuxidc.com/Linux/2016-05/131096.htm]( http://www.linuxidc.com/Linux/2016-05/131096.htm ) 
 
 *****************************************************
