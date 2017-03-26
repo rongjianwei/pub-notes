@@ -53,7 +53,7 @@ Df命令是linux系统以磁盘分区为单位查看文件系统，可以加上�
     sudo apt-get install docbook-xsl
     sudo apt-get install docbook-defguide
 
-最后这个就是那本大名鼎鼎的Docbook:The Definitive Guide，装完之后就可以直接在本机浏览器输入http://localhost/doc/docbook-defguide/html/docbook.html来阅读此书了，我们和谐社会不是不能访问docbook.org吗，装完这个就可以本机阅读了，当然，你得装了apache。
+最后这个就是那本大名鼎鼎的Docbook:The Definitive Guide，装完之后就可以直接在本机浏览器输入[http://localhost/doc/docbook-defguide/html/docbook.html]( http://localhost/doc/docbook-defguide/html/docbook.html )来阅读此书了，我们和谐社会不是不能访问docbook.org吗，装完这个就可以本机阅读了，当然，你得装了apache。
 
 *************************
 ### ubuntu中的压缩与解压缩
