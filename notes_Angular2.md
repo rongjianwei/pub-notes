@@ -12,9 +12,11 @@
 
 [hotJS angular2 ]( https://www.hotjs.net/skills/angular2/resources )
 
-[npm 淘宝镜像 ]( https://npm.taobao.org/ )
+[npm 淘宝镜像 ]( https://npm.taobao.org/ ) 
+
 ####你可以使用我们定制的 cnpm (gzip 压缩支持) 命令行工具代替默认的 npm。安装cnpm的操作：  
-    $ npm install -g cnpm --registry=https://registry.npm.taobao.org
+    $ npm install -g cnpm --registry=https://registry.npm.taobao.org 
+    
 ####安装模块
 从 registry.npm.taobao.org 安装所有模块. 当安装的时候发现安装的模块还没有同步过来, 淘宝 NPM 会自动在后台进行同步, 并且会让你从官方 NPM registry.npmjs.org 进行安装. 下次你再安装这个模块的时候, 就会直接从 淘宝 NPM 安装了.  
     
