@@ -229,6 +229,10 @@ https://www.drupal.org/node/1866108
 
 ## 参考网址与线索
 *************************
+Drupal 8 中文教程：从入门到精通  
+[https://www.lugir.com/drupal8](https://www.lugir.com/drupal8)  
+
+
 亚艾元 http://www.yaiyuan.com/  
 
 ***************************
