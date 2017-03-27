@@ -125,6 +125,7 @@ vim的颜色主题文件放在Vim运行目录下的color目录下，所以我们
 ### Ubuntu下安装使用Xfce4 桌面环境  
 
     sudo apt-get install xubuntu-desktop  
+    sudo apt install wicd #无线网卡管理
 
 ******************************************************
 ### Ubuntu 16.04下安装64位谷歌Chrome浏览器
