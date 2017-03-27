@@ -1,6 +1,6 @@
-#notes of drupal  
-##drupal使用函数  
-###drupal抓取外部网络图像  
+# notes of drupal  
+## drupal使用函数  
+### drupal抓取外部网络图像  
     
     function get_external_image($url) {
     $external_image = file_get_contents($url);
@@ -40,8 +40,8 @@
     get_external_image("");
 
  
-##在ubuntu 16.04系统上，安装drupal8
-###运行环境的准备
+## 在ubuntu 16.04系统上，安装drupal8
+### 运行环境的准备
 lamp  
 monogoDB  
 https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/  
@@ -58,18 +58,18 @@ composer
 drush  
 
 ****************************
-###JavaScript
+### JavaScript
 JavaScript 参考文档  ( https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference )  
 https://www.javascript.com/   
 http://www.itxueyuan.org/  
 http://www.w3school.com.cn/js/index.asp  
 
 ****************************
-###d8 database api
+### d8 database api
 https://www.drupal.org/docs/8/api/database-api  
 
 ****************************
-###ubuntu 下添加/删除启动服务
+### ubuntu 下添加/删除启动服务
 1.添加一个服务：$sudo update-rc.d ServiceName default  
 2.删除一个服务：$sudo update-rc.d ServiceName remove
 
@@ -77,7 +77,7 @@ https://www.drupal.org/docs/8/api/database-api
 然而，在启动或改变运行级别时，是在/etc/rcX.d中来搜索脚本。其中X是运行级别的number。
 
 ****************************
-###ubuntu 14.04下安装 tomcat7
+### ubuntu 14.04下安装 tomcat7
 sudo apt-get update
 sudo apt-get install tomcat7  
 安装辅助工具  
@@ -131,7 +131,7 @@ sudo service tomcat7 restart
 service tomcat7 restart
 
 *******************************
-###安装solr，solr下载地址：
+### 安装solr，solr下载地址：
 http://www.apache.org/dyn/closer.cgi/lucene/solr/  
 如果已经安装 java8 的版本，下载最新的 solr-6.3.0版本。  
 java7，对应下载 solr-5.5.3
@@ -143,7 +143,7 @@ java7，对应下载 solr-5.5.3
 安装 solr 服务，运行 solr-5.5.3/bin/install_solr_service.sh , 详细操作，参见该脚本。
 
 ****************************
-###在ubuntu 16.04下安装 composer
+### 在ubuntu 16.04下安装 composer
 
 [composer 中文网 ](http://www.phpcomposer.com/) (有关国内的镜像，大大提高update的速度)
 
@@ -174,13 +174,13 @@ install 运行成功后，转到2)-4)执行相应的步骤。
 	sudo composer config -g repo.packagist composer https://packagist.phpcomposer.com #国内镜像
 
 **********************************
-###通过 composer 安装 drush
+### 通过 composer 安装 drush
     composer global require drush/drush #master 版本 8.x
     sudo ln -s /home/rjw/.composer/vendor/drush/drush/drush  /usr/bin/drush
     composer remove drush/drush  
 
 **********************************
-###通过 composer 安装 drush (github 源代码)
+### 通过 composer 安装 drush (github 源代码)
 
 1)把在 Github 上的 Drush 克隆一份到本地的 /usr/local/src/drush 这个目录的下面。然后进入到这个目录：
 drush 8.x 兼容 d6, d7, d8
@@ -213,11 +213,11 @@ drush 8.x 兼容 d6, d7, d8
 
 
 ****************************
-###采用drush 更新drupal7 核心程序
+### 采用drush 更新drupal7 核心程序
 https://www.drupal.org/node/2550801
 
 ****************************
-###Drupal 7 - All About Rules
+### Drupal 7 - All About Rules
 https://www.drupal.org/node/1866108
 
 *********************************
@@ -227,46 +227,46 @@ https://www.drupal.org/node/1866108
 
 *************************
 
-##参考网址与线索
+## 参考网址与线索
 *************************
 亚艾元 http://www.yaiyuan.com/  
 
 ***************************
-###云客drupal8源码分析
+### 云客drupal8源码分析
 之数据库系统及其使用  
 [http://blog.csdn.net/u011474028/article/details/52958786](http://blog.csdn.net/u011474028/article/details/52958786)  
 之服务器容器及symfony依赖注入组件  
 [http://blog.csdn.net/u011474028/article/details/52623925](http://blog.csdn.net/u011474028/article/details/52623925)
 
 *************************
-###drupal8怎么使用外部数据库的数据  
+### drupal8怎么使用外部数据库的数据  
 https://zhidao.baidu.com/question/2271246971677217428.html
 
 *************************
-###国外那些优秀的 Drupal 教程博客  
+### 国外那些优秀的 Drupal 教程博客  
 http://drupalct.org/drupal/drupal-tutorial-blogs-you-should-know.html
 
 *************************
-###drupal 8 入门  
+### drupal 8 入门  
 http://blog.csdn.net/u011474028/article/details/52514472  
 symfony中文  http://symfony.cn/docs/  
 symfony官网 http://symfony.com/
 
 *****************
-###d8 建立客户模块
+### d8 建立客户模块
 [https://www.drupal.org/docs/8/creating-custom-modules]( https://www.drupal.org/docs/8/creating-custom-modules )
 
 
 **************************
-###drush 开发网站
+### drush 开发网站
 https://github.com/drush-ops/drush/
 
 ***************************************
-###关闭 clean url
+### 关闭 clean url
     drush vset clean_url 0 --yes
 
 ***************************************
-###配置Clean URL
+### 配置Clean URL
 
 修改apache/conf/httpd.conf文件：
 ubuntu apt安装中是 /etc/apache2/apache2.conf
@@ -279,7 +279,7 @@ ubuntu 中用命令
     sudo  a2enmod 开启 rewriter 模块。
 
 *********************************************
-###drupal8 创建上传目录
+### drupal8 创建上传目录
 
     mkdir  /var/www/drupal8/sites/default/files/
     sudo chown -Rvf www-data:www-data  /var/www/drupal8/sites/default/files
@@ -290,7 +290,7 @@ ubuntu 中用命令
 上述方法无效，改为 chmod 777 .
 
 *************************************
-###apt安装php5.6 php7.0 双系统，可以切换。
+### apt安装php5.6 php7.0 双系统，可以切换。
 https://launchpad.net/~ondrej/+archive/ubuntu/php
 
     sudo apt-get install -y language-pack-en-base
@@ -317,7 +317,7 @@ drupal调试
 https://martsie.github.io/2014/04/02/drupal-xdebug-debugging/
 
 **********************************
-###修改 vim 的默认配色(来自百度经验)
+### 修改 vim 的默认配色(来自百度经验)
 
 查看Vim实例中当前的颜色主题  
 打开一个Vim窗口，输入命令:color或:colorscheme后回车查看当前的颜色主题。  
@@ -348,13 +348,13 @@ vim的颜色主题文件放在Vim运行目录下的color目录下，所以我们
     sudo apt-get install mysql-workbench  
 
 *****************************************
-###Ubuntu下安装使用Xfce4 桌面环境
+### Ubuntu下安装使用Xfce4 桌面环境
 
     sudo apt-get install xubuntu-desktop  
     sudo apt install wicd #无线网卡管理
 
 ******************************************************
-###vi编辑器中的整行（多行）复制与粘贴就非常必要了。
+### vi编辑器中的整行（多行）复制与粘贴就非常必要了。
 1、复制
   1）单行复制
   在命令模式下，将光标移动到将要复制的行处，按“yy”进行复制；
@@ -383,7 +383,7 @@ vi复制多行文本的方法
    要删除多行的话，可以用 ：5, 9 de
 
 ********************************************************
-###在某个路径下查找所有包含“hello abcserver”字符串的文件。
+### 在某个路径下查找所有包含“hello abcserver”字符串的文件。
 
 find /etc -name “*” | xargs grep “hello abcserver”
 
@@ -391,7 +391,7 @@ find /etc -name “*” | xargs grep “hello abcserver”
 
 
 **************************************************************************
-###My Top 10 Drush commands
+### My Top 10 Drush commands
 
 A beginner's Guide to Drush
 drush 安装；sudo apt-get install drush
@@ -401,20 +401,20 @@ Think in Drupal
 TVDrupal.com
 
 
-###源码分析博客
+### 源码分析博客
 http://blog.sina.com.cn/s/blog_5a8b8eb80100r8pg.html
 
 drupalproject.org
 
 ******************
-###有用的drupal 模块：
+### 有用的drupal 模块：
 mudule_filter, locale, localization_update(l10n_update),
 features， strongarm, l10n update, smtp，
 wechat, wechat_views,
 
 ****************************
 
-###常用链接
+### 常用链接
 
 Drupal 7 - All About Rules  https://www.drupal.org/node/1866108
 
