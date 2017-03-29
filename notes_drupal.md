@@ -164,14 +164,16 @@ sudo chmod 755 /usr/local/bin/composer
 composer -version
 如果成功的话，会出现一个华丽的图标：composer 等等。
 
-*5)还有种方法，执行安装composer的php脚本：
-sudo php install
-install 运行成功后，转到2)-4)执行相应的步骤。
+*5)还有种方法，执行安装composer的php脚本： 
+
+    sudo php install
+    install 运行成功后，转到2)-4)执行相应的步骤。
 
 *6)还有种方法
-	sudo apt install composer
+
+    sudo apt install composer
     composer --version #测试安装是否成功
-	sudo composer config -g repo.packagist composer https://packagist.phpcomposer.com #国内镜像
+    sudo composer config -g repo.packagist composer https://packagist.phpcomposer.com #国内镜像
 
 **********************************
 ### 通过 composer 安装 drush
