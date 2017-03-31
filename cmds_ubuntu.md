@@ -2,6 +2,11 @@
 
 ## ubuntu 命令：
 ****************************
+### ubuntu 下载工具[http://ugetdm.com/](http://ugetdm.com/)
+    sudo apt install uget #安装
+    uget-gtk #调用
+
+****************************
 ### ubuntu 下添加/删除启动服务  
 1.添加一个服务：
     $sudo update-rc.d ServiceName default  
