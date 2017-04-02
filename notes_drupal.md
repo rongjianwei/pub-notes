@@ -234,8 +234,10 @@ https://www.drupal.org/node/1866108
 Drupal 8 中文教程：从入门到精通  
 [https://www.lugir.com/drupal8](https://www.lugir.com/drupal8)  
 
+Drupal项目社区
+[https://www.drupalproject.org/](https://www.drupalproject.org/)
 
-亚艾元 http://www.yaiyuan.com/  
+亚艾元 [http://www.yaiyuan.com/](http://www.yaiyuan.com/)  
 
 ***************************
 ### 云客drupal8源码分析
