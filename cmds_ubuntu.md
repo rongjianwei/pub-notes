@@ -2,6 +2,12 @@
 
 ## ubuntu 命令：
 ****************************
+### ubuntu 端口扫描，防火墙命令
+	nmap
+	ufw
+	gufw
+
+****************************
 ### ubuntu 下载工具[http://ugetdm.com/](http://ugetdm.com/)
     sudo apt install uget #安装
     uget-gtk #调用
