@@ -219,6 +219,9 @@ drush 8.x 兼容 d6, d7, d8
 https://www.drupal.org/node/2550801
 
 ****************************
+[https://www.drupal.org/node/2700999](https://www.drupal.org/node/2700999)
+
+****************************
 ### Drupal 7 - All About Rules
 https://www.drupal.org/node/1866108
 
