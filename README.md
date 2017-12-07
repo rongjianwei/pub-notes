@@ -1,33 +1,34 @@
 # pub-notes
 共享的技术笔记
-##目录
+## 目录
 [drupal笔记]( ./notes_drupal.md "drupal学习笔记" )    
 [ubuntu 常用命令]( ./cmds_ubuntu.md "ubuntu 常用命令" )  
 [Angular2笔记]( ./notes_Angular2.md "Angular2学习笔记" )  
 
 
-##网络技术相关的参考链接
-###Atom
+## 网络技术相关的参考链接
+### Atom
 [https://atom-china.org/](https://atom-china.org/)   
 https://cnpmjs.org/mirrors/atom/  
 https://atom.io/  
 
-###PHP7教程
+### PHP7教程
 [http://www.yiibai.com/php7/]( http://www.yiibai.com/php7/ )
 
-###Markdown
+### Markdown
 [Markdown语法说明（简体中文)]( http://www.appinn.com/markdown/ "Markdown" )  
 This is [an example]( http://example.com/ "Title") inline link.  
 [This link]( http://example.net/ ) has no title attribute.  
 retext 文本编辑  
 [https://github.com/retext-project/retext](https://github.com/retext-project/retext)
+windows md 文本编辑  
+[http://www.markdownpad.com/](http://www.markdownpad.com/)
 
-
-###SQL数据库
+### SQL数据库
 https://www.postgresql.org/  
 http://www.postgres.cn/index.php/home
 
-###NoSQL 数据库
+### NoSQL 数据库
 [monogoDB 中文社区]( http://www.mongoing.com/ )  
 https://www.mongodb.com/
 
@@ -37,26 +38,26 @@ https://redis.io/
 
 http://memcached.org/  
 
-###阿里短信  
+### 阿里短信  
 http://www.alidayu.com/
 
 **************************************************************************
 
-##其他：
-###萤石云  
+## 其他：
+### 萤石云  
 [https://www.ys7.com/](https://www.ys7.com/ "萤石官网")  
 [http://bbs.ys7.com/](http://bbs.ys7.com/ "萤石BBS")  
 [http://bbs.ys7.com/forum-176-1.html](http://bbs.ys7.com/forum-176-1.html "开发者平台")  
 
-###[http://www.vstarcam.cn/](http://www.vstarcam.cn/ "深圳市威视达康")  
+### [http://www.vstarcam.cn/](http://www.vstarcam.cn/ "深圳市威视达康")  
 联系电话: 186 8237 3981  
 onvif/RTSP协议  [https://www.onvif.org/](https://www.onvif.org/ "onvif 官网")  
 [http://FAQ.eye4.cn](http://FAQ.eye4.cn "VStarcam客服")  
 
-###[http://www.dahuatech.com/](http://www.dahuatech.com/ "浙江大华官网")
+### [http://www.dahuatech.com/](http://www.dahuatech.com/ "浙江大华官网")
 
 **************************************************************************
-###phpMyadmin默认也提供了访问控制功能，具体配置如下：
+### phpMyadmin默认也提供了访问控制功能，具体配置如下：
 
 进入phpMyAdmin目录，找到config.inc.php，如果没有，可以将根目录下的config.sample.inc.php复制为config.inc.php。
 
@@ -72,7 +73,7 @@ onvif/RTSP协议  [https://www.onvif.org/](https://www.onvif.org/ "onvif 官网"
 
 
 ************************
-###蓝灯项目
+### 蓝灯项目
 [https://github.com/getlantern/lantern ]( https://github.com/getlantern/lantern "蓝灯项目") 
 
 	sudo dpkg -i lantern-installer-beta-64-bit.deb
