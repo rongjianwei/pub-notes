@@ -1,4 +1,4 @@
-# commands of ubuntu
+x# commands of ubuntu
 
 ## ubuntu 命令：
 ****************************
@@ -11,6 +11,15 @@
 ### ubuntu 下载工具[http://ugetdm.com/](http://ugetdm.com/)
     sudo apt install uget #安装
     uget-gtk #调用
+
+****************************
+### apt 常用命令
+更新 apt 资源包，然后安装软件包  
+    sudo apt update
+    sudo apt upgrade
+
+    apt search 程序包名  #搜索
+    sudo apt-get install 程序包名 #安装
 
 ****************************
 ### ubuntu 下添加/删除启动服务  
@@ -60,9 +69,9 @@ Df命令是linux系统以磁盘分区为单位查看文件系统，可以加上�
 *************************
 ### 准备 docbook 环境
 
-    sudo apt-get install xsltproc
-    sudo apt-get install docbook-xsl
-    sudo apt-get install docbook-defguide
+    sudo apt install xsltproc
+    sudo apt install docbook-xsl
+    sudo apt install docbook-defguide
 
 最后这个就是那本大名鼎鼎的Docbook:The Definitive Guide，装完之后就可以直接在本机浏览器输入[http://localhost/doc/docbook-defguide/html/docbook.html]( http://localhost/doc/docbook-defguide/html/docbook.html )来阅读此书了，我们和谐社会不是不能访问docbook.org吗，装完这个就可以本机阅读了，当然，你得装了apache。
 
@@ -126,18 +135,35 @@ vim的颜色主题文件放在Vim运行目录下的color目录下，所以我们
     sudo apt upgrade
 
 ### 安装 lamp 服务器组, openssh 服务器  
+以下两项可以在系统安装时，选择加入。  
     sudo apt-get install lamp-server^  
 	sudo apt install openssh-server
-
-安装 mysql workbench  
-    sudo apt-get install mysql-workbench  
 
 *****************************************
 ### Ubuntu下安装使用Xfce4 桌面环境  
 
     sudo apt-get install xubuntu-desktop  
+安装图形界面之后，在图形界面下，settings/language support 安装中文支持。 输入法选择 fcitx 。如果没有，用 apt 命令安装。
+打开 settings/language support 把键盘输入法系统改成 fcitx 。
+登出(Log out) 你的计算机，然后重新登陆。
+打开任务中的输入法图标，选择设置，点击输入输入法这一栏的最底下找到 “+” 按钮，并在弹出的窗口中取消 “只显示当前语言” 的复选框，在搜索栏中查找 “Sogou Pinyin”，并添加。
     sudo apt install wicd #无线网卡管理
 
+安装 mysql workbench  
+    sudo apt-get install mysql-workbench  
+
+
+安装搜狗汉字输入法  
+[https://pinyin.sogou.com/linux/](https://pinyin.sogou.com/linux/)
+
+ubuntu 16.04 lts 怎样安装搜狗输入法  
+    sudo apt-get install fcitx fcitx-libs  
+    sudo dpkg -i sogoupinyin_xxx.deb
+
+	sudo apt install fcitx-table-wbpy #搜狗安装失败，替代品
+
+参考：  
+[https://zhidao.baidu.com/question/330470557468596205.html?qbl=relate_question_0](https://zhidao.baidu.com/question/330470557468596205.html?qbl=relate_question_0)
 ******************************************************
 ### Ubuntu 16.04下安装64位谷歌Chrome浏览器
 

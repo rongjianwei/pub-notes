@@ -42,7 +42,10 @@
  
 ## 在ubuntu 16.04系统上，安装drupal8
 ### 运行环境的准备
-lamp  
+安装lamp  
+    apt-get install lamp-server^
+[https://help.ubuntu.com/community/ApacheMySQLPHP](https://help.ubuntu.com/community/ApacheMySQLPHP)
+
 monogoDB  
 https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/  
 [Ubuntu16.04使用阿里云镜像安装Mongodb]( http://www.linuxdiyf.com/linux/26151.html )  
