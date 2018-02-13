@@ -1,8 +1,8 @@
 # notes of drupal  
 ## drupal8 更新（updating）步骤
 更新（updating）的含义是小版本更新(例如8.01 至 8.2.4), 我们使用的两个命令程序协助更新，具体的版本如下：  
-composer 版本：        [composer 中文网 ](http://www.phpcomposer.com/) (有关国内的镜像，大大提高update的速度)  
-drush 版本：  
+composer 版本：1.0.0-beta2  [composer 中文网 ](http://www.phpcomposer.com/) (有关国内的镜像，大大提高update的速度)  
+drush 版本：9.1.0  
 我们使用这两个命令操作，可以大幅度提高工作效率。 提别提醒，各种更新操作，要先在测试网站上操作，做到万无一失之后，才能在生产（production）网站上操作。 
 
 ### 首先更新模块
