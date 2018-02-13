@@ -49,10 +49,6 @@ vim从入门到放弃
 让VIM彻底告别乱码
 [http://blog.csdn.net/smstong/article/details/51279810](http://blog.csdn.net/smstong/article/details/51279810)
 
-
-
-
-
 ****************************
 ### ubuntu 端口扫描，防火墙命令
 	nmap
