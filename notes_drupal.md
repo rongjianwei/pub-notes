@@ -1,4 +1,69 @@
 # notes of drupal  
+## drupal8 更新（updating）步骤
+更新（updating）的含义是小版本更新(例如8.01 至 8.2.4), 我们使用的两个命令程序协助更新，具体的版本如下：  
+composer 版本：        [composer 中文网 ](http://www.phpcomposer.com/) (有关国内的镜像，大大提高update的速度)  
+drush 版本：  
+我们使用这两个命令操作，可以大幅度提高工作效率。 提别提醒，各种更新操作，要先在测试网站上操作，做到万无一失之后，才能在生产（production）网站上操作。 
+
+### 首先更新模块
+1）备份网站程序文件，备份网站数据库文件：
+
+    sudo tar zcvf 备份文件名.tar.gz 网站程序文件目录  #压缩打包后保存
+
+    TODAY0=$(date +%Y-%m-%d)
+    mysqldump --defaults-extra-file="temp.cnf" --user=fox  --max_allowed_packet=1G --host=127.0.0.1 --port=3306 --default-character-set=utf8 --single-transaction=TRUE "网站数据库名" > "./${TODAY0}网站数据库名_backup.sql" #备份网站数据库，形成一个 sql 文件。
+
+2）以 Admin（用户1）的身份登陆网站。 
+
+
+3）选择以下的功能：管理（Manage）->扩展（Extend） ->更新（Update）, 查看有哪些某块需要更新。 参照更新提示，复制 composer require 命令。 然后在命令行窗口运行该 composer 命令，注意这个命令行窗口的当前目录必须是网站的主目录：
+
+    composer require 'drupal/profile:^1.0' #实例
+
+5）每个模块更新之后，尝试更新数据库： 
+ 
+    drush pm-updatedb
+    drush cr #必要时更新缓冲区
+
+5）然后进入网站测试一下，如果运行正常，返回 2）继续更新模块，直至全部完成。
+
+
+6）如果发现某个模块更新有问题做记录，这个出错的模块，暂时不能更新。有了新的版本以后再说。
+
+
+
+### 其次更新 drupal8 内核
+1）备份网站程序文件，备份网站数据库文件：
+
+    sudo tar zcvf 备份文件名.tar.gz 网站程序文件目录  #压缩打包后保存
+
+    TODAY0=$(date +%Y-%m-%d)
+    mysqldump --defaults-extra-file="temp.cnf" --user=fox  --max_allowed_packet=1G --host=127.0.0.1 --port=3306 --default-character-set=utf8 --single-transaction=TRUE "网站数据库名" > "./${TODAY0}网站数据库名_backup.sql" #
+
+2）将网站转入维护模式（Activate maintenance mode）：
+
+    drush sset system.maintenance_mode 1
+
+3）清除缓冲区（cache):
+
+    drush cr
+
+4）更新全部程序：
+
+    composer update 
+
+5）更新数据库，清除缓冲区（cache):
+
+    drush updatedb
+    drush cr
+
+7）将转入网站上线模式：
+
+    drush sset system.maintenance_mode 1
+
+8）测试网站，万一不能正常运行，用备份的文件恢复“网站程序文件，恢复数据库”。
+
+
 ## drupal使用函数  
 ### drupal抓取外部网络图像  
     
