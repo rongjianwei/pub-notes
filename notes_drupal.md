@@ -23,7 +23,7 @@ drush 版本：9.1.0
 5）每个模块更新之后，尝试更新数据库： 
  
     drush updatedb #更新数据库
-    drush cr #必要时清除缓冲区
+    drush cr #必要时清除缓冲区
 
 5）然后进入网站测试一下，如果运行正常，返回 2）继续更新模块，直至全部完成。
 
@@ -57,9 +57,9 @@ drush 版本：9.1.0
     drush updatedb
     drush cr
 
-7）将转入网站上线模式：
+7）将网站转入上线模式：
 
-    drush sset system.maintenance_mode 1
+    drush sset system.maintenance_mode 0
 
 8）测试网站，万一不能正常运行，用备份的文件恢复“网站程序文件，恢复数据库”。
 
