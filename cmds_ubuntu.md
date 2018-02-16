@@ -200,6 +200,9 @@ vim的颜色主题文件放在Vim运行目录下的color目录下，所以我们
 安装 mysql workbench  
     sudo apt-get install mysql-workbench  
 
+安装 phpmyadmin  
+    sudo apt install phpmyadmin #注意安装位置，可以用 whereis 命令查看。 然后在 /var/www/html 目录中设定 ln -s 虚拟目录。  
+
 
 安装搜狗汉字输入法  
 [https://pinyin.sogou.com/linux/](https://pinyin.sogou.com/linux/)
