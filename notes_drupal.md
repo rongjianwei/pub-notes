@@ -110,7 +110,7 @@ drush 版本：9.1.0
 ## 在ubuntu 16.04系统上，安装drupal8
 ### 运行环境的准备
 安装lamp  
-    apt-get install lamp-server^
+    apt-get install lamp-server^  
 [https://help.ubuntu.com/community/ApacheMySQLPHP](https://help.ubuntu.com/community/ApacheMySQLPHP)
 
 monogoDB  
@@ -239,8 +239,8 @@ composer -version
     sudo php install
     install 运行成功后，转到2)-4)执行相应的步骤。
 
-*6)还有种方法
-
+*6)还有种方法  
+# 1.6.0版下载安装后,运行有问题, 采用apt安装 1.0.0 beta2 版本
     sudo apt install composer
     composer --version #测试安装是否成功
     sudo composer config -g repo.packagist composer https://packagist.phpcomposer.com #国内镜像
