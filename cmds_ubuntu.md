@@ -184,8 +184,12 @@ vim的颜色主题文件放在Vim运行目录下的color目录下，所以我们
 
 ### 安装 lamp 服务器组, openssh 服务器  
 以下两项可以在系统安装时，选择加入。  
-    sudo apt-get install lamp-server^  
-	sudo apt install openssh-server
+    sudo apt-get install lamp-server^   
+    sudo apt install openssh-server
+
+for deepin 15.7
+    sudo apt install openssh-server
+    
 
 *****************************************
 ### Ubuntu下安装使用Xfce4 桌面环境  
