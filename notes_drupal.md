@@ -285,7 +285,7 @@ drush 8.x 兼容 d6, d7, d8
 
 ****************************
 ### 安装drupal控制台
-[https://drupalconsole.com/](drupalconsole官网)
+[drupalconsole官网](https://drupalconsole.com/)
 
 ****************************
 ### 采用drush 更新drupal7 核心程序
