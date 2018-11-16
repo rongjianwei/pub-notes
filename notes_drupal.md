@@ -283,6 +283,9 @@ drush 8.x 兼容 d6, d7, d8
 
     composer global remove drush/drush
 
+****************************
+### 安装drupal控制台
+[https://drupalconsole.com/](drupalconsole官网)
 
 ****************************
 ### 采用drush 更新drupal7 核心程序
