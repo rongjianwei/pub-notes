@@ -97,6 +97,7 @@ Deb软件包相关安装与卸载
     dpkg -info xxx.deb #查看软件包信息
     dpkg -L xxx.deb  #查看文件拷贝详情
     dpkg -l  #查看系统中已安装软件包信息
+    dpkg -l | grep php #查看系统中已安装软件包信息, 显示全部包含 php 的软件包
 
 **********************************
 ### 查看磁盘空间
@@ -263,8 +264,7 @@ vi复制多行文本的方法
 ********************************************************
 ### 在某个路径下查找所有包含“hello abcserver”字符串的文件。
 
-find /etc -name “*” | xargs grep “hello abcserver”
-
-或者find /etc -name “*” | xargs grep “hello abcserver” > ./cqtest.txt
+    find /etc -name "*" | grep "hello abcserver"
+    find /etc -name "*" | grep "hello abcserver" > ./cqtest.txt
 
 
