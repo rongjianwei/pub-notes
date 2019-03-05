@@ -6,9 +6,9 @@ mysql的安装与命令
 
 ### 1 安装方法摘要：
 A）Ubuntu 系统下安装：
-sudo apt install postgresql postgresql-contrib
-sudo apt install phppgadmin pgadmin3
-
+       sudo apt install postgresql postgresql-contrib
+       sudo apt install phppgadmin pgadmin3
+       
 B）windows 系统下安装:
 
 
