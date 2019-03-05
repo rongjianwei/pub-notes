@@ -6,6 +6,7 @@ mysql的安装与命令
 
 ### 1 安装方法摘要：
 A）Ubuntu 系统下安装：
+
        sudo apt install postgresql postgresql-contrib
        sudo apt install phppgadmin pgadmin3
        
@@ -33,13 +34,14 @@ B) 切换数据库
 
 ### 3 查看帮助
 psql提供了很好的在线帮助文档，总入口命令是help，输入这个命令就可以看到
-vsb9=# help
-You are using psql, the command-line interface to PostgreSQL.
-Type:  \copyright for distribution terms
-       \h for help with SQL commands
-       \? for help with psql commands
-       \g or terminate with semicolon to execute query
-       \q to quit
+
+       vsb9=# help
+       You are using psql, the command-line interface to PostgreSQL.
+       Type:  \copyright for distribution terms
+              \h for help with SQL commands
+              \? for help with psql commands
+              \g or terminate with semicolon to execute query
+              \q to quit
 
 可以看到，标准SQL命令的帮助和psql特有命令的帮助是分开的。输入\?查看psql命令，会发现所有的psql命令都是以\开头，这就很容易和标准的SQL命令进行区分开来。
 
