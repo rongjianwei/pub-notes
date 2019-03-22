@@ -1,4 +1,4 @@
-mysql的安装与命令
+##mysql的安装与命令
 
 
 
@@ -70,4 +70,56 @@ psql: \d+ tablename
 #### (6)退出登录
 mysql: quit 或者\q     
 psql:\q
+
+##sqlite数据库
+
+https://www.sqlite.org/index.html
+https://sqlitestudio.pl/
+
+SQlite入门 http://www.runoob.com/sqlite/sqlite-tutorial.html
+
+##go语言环境的设置
+
+https://blog.csdn.net/gongpulin/article/details/80972806
+
+方法1(亲测有效): gopm 代替go 下载第三方依赖包
+
+可以采用gopm从golang.org一些镜像网站上下载。 
+a). 安装gopm
+
+go get -u github.com/gpmgo/gopm
+
+    1
+
+b). 用gopm get -g代替go getgopm get 
+不采用-g参数，会把依赖包下载.vendor目录下面； 
+采用-g 参数，可以把依赖包下载到GOPATH目录中；
+
+gopm get -g golang.org/x/net  
+
+##golang 开机启动
+
+https://www.golangtc.com/t/57108dd6b09ecc66b900032a 
+
+可以看看这个包 https://github.com/takama/daemon 
+
+https://www.linuxidc.com/Linux/2017-09/147166.htm 
+
+
+Go语言daemon启动的解决方法.linux平台 https://blog.csdn.net/fyxichen/article/details/50541449 
+
+golang以daemen后台形式运行 https://blog.csdn.net/lsm135/article/details/78947113 
+
+Ubuntu - screen 命令工具 https://www.aiuai.cn/aifarm791.html
+
+##golang https服务器
+
+go与https https://www.cnblogs.com/pzblog/p/9088286.html
+
+golang中使用HTTPS以及TSL(.crt、.key、.pem区别以及crypto/tls包介绍) https://studygolang.com/articles/10776
+
+
+##screen命令
+
+ https://www.cnblogs.com/ywl925/p/3604530.html
 
